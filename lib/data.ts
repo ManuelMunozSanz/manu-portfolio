@@ -5,31 +5,31 @@ import { LuGraduationCap } from "react-icons/lu";
 import leaflet3dMarkerImg from "@/public/leaflet-3d-marker.webp";
 import classRoomIslandImg from "@/public/classroom-island.webp";
 import amigosEnJuegoImg from "@/public/amigos-en-juego.webp";
+import { url } from "inspector";
 
 export const links = [
   {
-    name: "Home",
+    name: "Inicio",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Acerca",
     hash: "#about",
   },
   {
-    name: "Experience",
+    name: "Experiencia",
     hash: "#experience",
   },
   {
-    name: "Projects",
+    name: "Proyectos",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Habilidades",
     hash: "#skills",
   },
-
   {
-    name: "Contact",
+    name: "Contacto",
     hash: "#contact",
   },
 ] as const;
@@ -68,6 +68,7 @@ export const projectsData = [
       "App interactiva que conecta a varios jugadores en tiempo real mediante WebSockets. Permite crear salas privadas para poner a prueba cuánto se conocen.",
     tags: ["Node.js", "Next.js", "Express", "Tailwind", "socket.io"],
     imageUrl: amigosEnJuegoImg,
+    url: "https://party-quiz-client.vercel.app/",
   },
   {
     title: "Leaflet 3D Marker",
@@ -75,13 +76,15 @@ export const projectsData = [
       "Es un paquete npm diseñado para mejorar tus mapas Leaflet en React, añadiendo la capacidad de integrar fácilmente marcadores 3D. ",
     tags: ["npm", "React", "JavaScript", "TypeScript"],
     imageUrl: leaflet3dMarkerImg,
+    url: "https://www.npmjs.com/package/leaflet-3d-marker",
   },
   {
     title: "ClassRoom Island",
     description:
-      "Aplicación web para enfocar la educación de una manera diferente. Permite crear un espacio virtual para aprender y jugar.",
+      "Aplicación web para enfocar la educación de una manera diferente. Permite crear un aula virtual donde se aprenderá jugando. (En desarrollo)",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "PostgreSQL"],
     imageUrl: classRoomIslandImg,
+    url: "",
   },
 ] as const;
 

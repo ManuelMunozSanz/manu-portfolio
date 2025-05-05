@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import manuImg from "@/public/manu-devanddel.webp";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Inicio", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const yearsOfExperience = new Date().getFullYear() - 2021;
 
@@ -36,7 +36,7 @@ export default function Intro() {
             Manuel Muñoz
           </h1>
 
-          <h2 className="text-xl sm:text-2xl font-semibold italic mb-4 font-mono tracking-wide">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 font-sans tracking-wide italic">
             Full-Stack Developer
           </h2>
           <p className="text-lg sm:text-xl max-w-xl">
@@ -94,7 +94,7 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("Contacto");
             setTimeOfLastClick(Date.now());
           }}
         >

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Acerca", 0.5);
 
   return (
     <motion.section
@@ -22,10 +22,10 @@ export default function About() {
       <p className="mb-3">
         Soy una persona <span className="font-bold">creativa</span> y{" "}
         <span className="font-bold">resolutiva</span>, con facilidad para
-        adaptarme a distintos entornos. Siempre me han interesado la{" "}
-        <span className="font-bold">tecnología</span> y lo{" "}
-        <span className="font-bold">audiovisual</span>, y la programación me
-        permite fusionar mis intereses{" "}
+        adaptarme a distintos entornos. Siempre me ha interesado la{" "}
+        <span className="font-bold">tecnología</span> y los{" "}
+        <span className="font-bold">procesos creativos</span>, y la programación
+        me permite fusionar mis intereses{" "}
         <span className="italic">técnicos y artísticos</span>.
       </p>
 

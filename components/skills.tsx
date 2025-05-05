@@ -35,7 +35,7 @@ export default function Skills() {
     },
     {}
   );
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Habilidades", 0.5);
 
   return (
     <section
