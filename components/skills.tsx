@@ -63,7 +63,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="relative mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="relative mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-0"
     >
       <SectionHeading>Mis habilidades</SectionHeading>
 

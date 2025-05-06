@@ -33,7 +33,7 @@ export default function Intro() {
         >
           <p className="text-xl sm:text-2xl font-bold  mb-1  ">Hola, soy</p>
 
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text">
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-orange-400 dark:to-red-500 dark:text-transparent">
             Manuel Muñoz
           </h1>
 
