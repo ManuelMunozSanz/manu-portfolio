@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import manuImg from "@/public/manu-devanddel.webp";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Intro() {
   const { ref } = useSectionInView("Inicio", 0.5);
@@ -20,7 +21,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-5xl mx-auto px-6 sm:mt-28"
+      className="relative mb-28 max-w-5xl mx-auto px-6 sm:mt-28"
     >
       <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-center sm:justify-between mb-12">
         {/* Text section */}
@@ -37,7 +38,22 @@ export default function Intro() {
           </h1>
 
           <h2 className="text-xl sm:text-2xl font-semibold mb-4 font-sans tracking-wide italic">
-            Full-Stack Developer
+            <Typewriter
+              words={[
+                "Backend Developer",
+                "Frontend Developer",
+                "Tech Problem Solver",
+                "Clean Code Enthusiast",
+                "Agile Fan with Strong Opinions",
+                "Full-Stack Developer",
+              ]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={20}
+              delaySpeed={2000}
+            />{" "}
           </h2>
           <p className="text-lg sm:text-xl max-w-xl">
             Cuento con más de{" "}
@@ -73,9 +89,14 @@ export default function Intro() {
           />
           <motion.span
             className="absolute bottom-0 right-0 text-3xl sm:text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+            animate={{
+              rotate: [0, 30, -15, 20, -10, 20, -10, 0],
+              scale: [4, 1],
+            }}
+            transition={{
+              duration: 2,
+              ease: [0.42, 0, 0.58, 1],
+            }}
           >
             👋
           </motion.span>
