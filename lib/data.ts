@@ -1,11 +1,31 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import leaflet3dMarkerImg from "@/public/leaflet-3d-marker.webp";
 import classRoomIslandImg from "@/public/classroom-island.webp";
 import amigosEnJuegoImg from "@/public/amigos-en-juego.webp";
-import { url } from "inspector";
+
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaAngular,
+  FaDocker,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiSpringboot,
+  SiPython,
+  SiPostgresql,
+  SiMongodb,
+  SiGithub,
+  SiElasticsearch,
+  SiMariadb,
+} from "react-icons/si";
+import { DiDjango, DiGit } from "react-icons/di";
 
 export const links = [
   {
@@ -36,7 +56,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+    title: "Grado en Desarrollo de Aplicaciones Multiplataforma",
     icon: React.createElement(LuGraduationCap),
     date: "2018 - 2020",
     roles: [
@@ -153,74 +173,59 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  //Web Development
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Framer Motion",
-
-  "Tailwind",
-  // Backend Development
-  "Java",
-  "Python",
-  "C#",
-  ".NET",
-  "Spring",
-  "Node.js",
-  "Express",
-
-  // Database Management
-  "MySQL",
-  "SQLite",
-  "PostgreSQL",
-  "MongoDB",
-
-  // DevOps and Version Control
-  "Git",
-  "AzureDevOps",
-  "GitHub",
-  "Docker",
-  "CI/CD",
-
-  // ETC
-  "Selenium",
-] as const;
-
-export const groupedSkills: Record<string, string[]> = {
-  "🧑‍💻 Frontend": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Angular",
-    "Tailwind",
-    "Framer Motion",
-  ],
-  "⚙️ Backend": [
-    "Java",
-    "Spring Boot",
-    "Node.js",
-    "Express",
-    "C#",
-    ".NET",
-    "Python",
-  ],
-  "🛢 Databases": ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
-  "🔧 DevOps & Tools": [
-    "Git",
-    "GitHub",
-    "Azure DevOps",
-    "CI/CD",
-    "Docker",
-    "Elastic (ELK) Stack",
-    "Postman",
-    "Vercel",
-    "Selenium",
-  ],
+export const groupedSkills: Record<
+  string,
+  { icon: JSX.Element; skills: string[] }
+> = {
+  Frontend: {
+    icon: React.createElement(FaReact),
+    skills: [
+      "HTML/CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Angular",
+      "Tailwind",
+      "Figma",
+    ],
+  },
+  Backend: {
+    icon: React.createElement(SiSpringboot),
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Node.js",
+      "Express",
+      "C#",
+      ".NET",
+      "Python",
+      "Android Studio",
+    ],
+  },
+  Databases: {
+    icon: React.createElement(SiPostgresql),
+    skills: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "SQLite",
+      "Firebase",
+      "Elasticsearch",
+      "MariaDB",
+    ],
+  },
+  "DevOps & Tools": {
+    icon: React.createElement(FaDocker),
+    skills: [
+      "Git",
+      "GitHub",
+      "Azure DevOps",
+      "CI/CD",
+      "Docker",
+      "Elastic Stack",
+      "Postman",
+      "Selenium",
+    ],
+  },
 };
