@@ -24,17 +24,22 @@ export default function ContactFormEmail({
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>Oferta desde Portfolio Manuel</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight">
-                You received the following message from the contact form
+                Oferta desde Portfolio Manuel:
               </Heading>
               <Text>{message}</Text>
               <Hr />
-              <Text>The sender's email is: {senderEmail}</Text>
+              <Text>
+                El correo electrónico del remitente es:{" "}
+                <a href={`mailto:${senderEmail}`} className="underline">
+                  {senderEmail}
+                </a>
+              </Text>
             </Section>
           </Container>
         </Body>
