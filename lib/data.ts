@@ -5,27 +5,8 @@ import leaflet3dMarkerImg from "@/public/leaflet-3d-marker.webp";
 import classRoomIslandImg from "@/public/classroom-island.webp";
 import amigosEnJuegoImg from "@/public/amigos-en-juego.webp";
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaAngular,
-  FaDocker,
-} from "react-icons/fa";
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiSpringboot,
-  SiPython,
-  SiPostgresql,
-  SiMongodb,
-  SiGithub,
-  SiElasticsearch,
-  SiMariadb,
-} from "react-icons/si";
-import { DiDjango, DiGit } from "react-icons/di";
+import { FaReact, FaDocker } from "react-icons/fa";
+import { SiSpringboot, SiPostgresql } from "react-icons/si";
 
 export const links = [
   {
