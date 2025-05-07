@@ -33,7 +33,7 @@ export default function Intro() {
         >
           <p className="text-xl sm:text-2xl font-bold  mb-1  ">Hola, soy</p>
 
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-orange-400 dark:to-red-500 dark:text-transparent">
+          {/* <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-orange-400 dark:to-red-500 dark:text-transparent">
             Manuel Muñoz
           </h1>
 
@@ -54,6 +54,34 @@ export default function Intro() {
               deleteSpeed={20}
               delaySpeed={2000}
             />{" "}
+          </h2> */}
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 text-blue-500 dark:text-orange-400">
+            <Typewriter
+              words={[
+                "Manuel Muñoz",
+                "Manu",
+                "Manel",
+                "Manounlins",
+                "Manoulino",
+                "CryBabies 👶",
+                "Nenuco",
+                "Nenoide",
+                "El chispita ⚡",
+                "El sosito 😎",
+                "El nene de la Sara",
+                "Nena que te amo 💖",
+              ]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={30}
+              delaySpeed={2000}
+            />{" "}
+          </h1>
+
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 font-sans tracking-wide italic">
+            Full-Stack Developer
           </h2>
           <p className="text-lg sm:text-xl max-w-xl">
             Cuento con más de{" "}
