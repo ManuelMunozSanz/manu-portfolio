@@ -12,8 +12,11 @@ const inter = Inter({ subsets: ["latin"] });
 const yearsOfExperience = new Date().getFullYear() - 2021;
 
 export const metadata = {
-  title: "Manuel | Portfolio",
+  title: "Manuel Muñoz",
   description: `Manuel is a full-stack developer with ${yearsOfExperience} years of experience.`,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
