@@ -6,7 +6,6 @@ import { BsMoon, BsSun } from "react-icons/bs";
 
 export default function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
-
   return (
     <button
       aria-label="Cambiar tema"
