@@ -15,9 +15,13 @@ html.dark {
 }
 
 :root {
-  --arrow-size: 40px; /* Más pequeño */
-  --arrow-speed: 2s; /* Un poco más rápido */
-  --peak-opacity: 0.4; /* Más tenue */
+  --arrow-color: rgba(0, 0, 0, 0.4);
+  --arrow-size: 40px;
+  --arrow-speed: 2s;
+  --peak-opacity: 0.4;
+}
+html.dark {
+  --arrow-color: rgba(255, 255, 255, 0.4); /* dark mode */
 }
 
 .arrows {
@@ -28,10 +32,6 @@ html.dark {
   height: var(--arrow-size);
   transform: translate(-50%, -50%);
   opacity: 0.7;
-  /* Añadir clases dinámicas de color */
-  border-left: calc(var(--arrow-size) / 3) solid;
-  border-bottom: calc(var(--arrow-size) / 3) solid;
-  animation: arrows var(--arrow-speed) ease-in-out infinite;
 }
 
 .arrows::before,
@@ -40,6 +40,10 @@ html.dark {
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
+  border-left: calc(var(--arrow-size) / 3) solid var(--arrow-color);
+  border-bottom: calc(var(--arrow-size) / 3) solid var(--arrow-color);
   transform: rotate(-45deg);
   animation: arrows var(--arrow-speed) ease-in-out infinite;
 }

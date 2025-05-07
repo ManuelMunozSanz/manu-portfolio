@@ -2,12 +2,9 @@ import React from "react";
 
 export default function ArrowDown() {
   return (
-    <a
-      href="#about"
-      className="sticky bottom-0 left-1/2 transform -translate-x-1/2"
-    >
+    <a href="#about" className="sticky bottom-0 hidden sm:flex">
       <div className="relative w-full h-32 my-24">
-        <div className="arrows dark:border-white border-black" />
+        <div className="arrows " />
       </div>
     </a>
   );
