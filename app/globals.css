@@ -13,3 +13,58 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+:root {
+  --arrow-size: 40px; /* Más pequeño */
+  --arrow-speed: 2s; /* Un poco más rápido */
+  --peak-opacity: 0.4; /* Más tenue */
+}
+
+.arrows {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  /* Añadir clases dinámicas de color */
+  border-left: calc(var(--arrow-size) / 3) solid;
+  border-bottom: calc(var(--arrow-size) / 3) solid;
+  animation: arrows var(--arrow-speed) ease-in-out infinite;
+}
+
+.arrows::before,
+.arrows::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  animation: arrows var(--arrow-speed) ease-in-out infinite;
+}
+
+.arrows::before {
+  transform: translate(
+      calc(var(--arrow-size) / 3),
+      calc(var(--arrow-size) * 1.1)
+    )
+    rotate(-45deg);
+}
+
+.arrows::after {
+  transform: translate(calc(var(--arrow-size) * 2 / 3), 0px) rotate(-45deg);
+  animation-delay: calc(var(--arrow-speed) / -2);
+}
+
+@keyframes arrows {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(0) rotate(-45deg);
+  }
+  50% {
+    opacity: var(--peak-opacity);
+    transform: translateY(5px) rotate(-45deg);
+  }
+}

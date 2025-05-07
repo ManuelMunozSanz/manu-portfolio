@@ -56,9 +56,6 @@ export default function Intro() {
             />{" "}
           </h2>
 
-          <h2 className="text-xl sm:text-2xl font-semibold mb-4 font-sans tracking-wide italic">
-            Full-Stack Developer
-          </h2>
           <p className="text-lg sm:text-xl max-w-xl">
             Cuento con más de{" "}
             <span className="font-medium">
